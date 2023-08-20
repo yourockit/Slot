@@ -1,24 +1,36 @@
-name: Build and deploy to GitHub Pages
+name: Deploy to gh-pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Install, lint, build 🔧
-        run: |
-          npm install
-          npm run lint:js
-          npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.0
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          branch: gh-pages
-          folder: build
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build  # Здесь замените на команду сборки вашего проекта
+
+      - name: Deploy to gh-pages
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git checkout gh-pages
+          git rm -rf .
+          mv dist/* .
+          git add .
+          git commit -m "Auto deploy to gh-pages"
+          git push origin gh-pages
