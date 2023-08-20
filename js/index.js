@@ -9,5 +9,3 @@ langButton.addEventListener("click", function () {
 closeButton.addEventListener("click", function () {
   navbarDropdown.classList.add("disabled");
 });
-
-console.log("ok");
