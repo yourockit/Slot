@@ -13,13 +13,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Deploy to gh-pages
+      - name: Create gh-pages branch
+        run: git checkout -b gh-pages
+
+      - name: Set Git config
+        run: git config user.email "action@github.com"
+
+      # Здесь можно добавить дополнительные шаги по сборке или копированию файлов
+
+      - name: Commit and push to gh-pages
         run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Action"
-          git checkout gh-pages
-          git rm -rf .
-          git checkout main -- .
           git add .
           git commit -m "Auto deploy to gh-pages"
           git push origin gh-pages
