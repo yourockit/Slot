@@ -55,7 +55,7 @@ gulp.task("watch", function () {
 
   gulp.watch("src/scss/**/*.scss", gulp.series("sass"));
   gulp.watch("src/js/*.js", gulp.series("js"));
-  gulp.watch("src/components/**/*.html", gulp.series("build"));
+  gulp.watch("src/html/**/*.html", gulp.series("build"));
   gulp.watch("src/**/*.svg", gulp.series("copy-svg"));
   gulp.watch("dist/index.html").on("change", browserSync.reload);
 });

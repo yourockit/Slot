@@ -1,0 +1,11 @@
+.footer-menu-mobile {
+  @media screen and (min-width: $w-desktop) {
+    display: none;
+  }
+}
+
+.footer-menu-desktop {
+  @media screen and (min-width: $w-desktop) {
+    display: flex;
+  }
+}

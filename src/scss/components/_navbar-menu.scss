@@ -16,14 +16,45 @@
     }
   }
   &__item {
+    position: relative;
     cursor: pointer;
   }
   &__item-title {
+    font-size: 16px;
     font-weight: 500;
     margin-right: 10px;
   }
   &__icon-down {
     height: 10px;
     width: 10px;
+  }
+  &__submenu {
+    position: absolute;
+    flex-direction: column;
+    background-color: $navbar-menu-bg-color;
+    padding: 25px 0 25px 0;
+    border-radius: 10px;
+    white-space: nowrap;
+    gap: 10px;
+    box-shadow: 0px 1px 5px 0px #001a4226;
+  }
+  &__item:hover &__submenu {
+    display: flex;
+  }
+  &__submenu-item {
+    font-size: 16px;
+    padding: 10px 25px 10px 25px;
+    transition: background-color 250ms;
+    &:hover {
+      background-color: $btn-hover-bg-color;
+    }
+    &:active {
+      background-color: $btn-active-bg-color;
+    }
+  }
+  &__item-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: $fc-basic;
   }
 }

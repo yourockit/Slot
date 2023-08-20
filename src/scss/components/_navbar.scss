@@ -1,17 +1,16 @@
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  // @media screen and (min-width: 810px) {
-  //   justify-content: center;
-  // }
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    gap: 10px;
+  }
   &__logo {
     display: flex;
     align-items: end;
     height: 30px;
-    margin-right: 10px;
   }
   &__icon-logo {
     height: 27px;
@@ -25,7 +24,7 @@
   }
   &__menu-desktop {
     display: none;
-    @media screen and (min-width: 810px) {
+    @media screen and (min-width: $w-mobile) {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -37,7 +36,7 @@
     height: 40px;
     width: 40px;
     cursor: pointer;
-    @media screen and (min-width: 810px) {
+    @media screen and (min-width: $w-mobile) {
       display: block;
     }
   }
@@ -49,11 +48,15 @@
     color: $navbar-btn-color;
     background-color: $navbar-btn-bg-color;
     border: none;
+    font-size: 14px;
+    font-weight: 700;
     border-radius: 5px;
     white-space: nowrap;
     padding: 11px 18px 11px 18px;
-    margin-left: 20px;
     cursor: pointer;
+    @media screen and (min-width: $w-desktop) {
+      font-size: 16px;
+    }
   }
   &__menu-button {
     border: none;
@@ -64,7 +67,7 @@
     &:active {
       background-color: $btn-active-bg-color;
     }
-    @media screen and (min-width: 810px) {
+    @media screen and (min-width: $w-mobile) {
       display: none;
     }
   }

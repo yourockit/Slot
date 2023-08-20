@@ -9,6 +9,9 @@
     font-size: $fs-mobile;
     color: $fc-basic;
     padding: 20px 0 20px 0;
+    @media screen and (min-width: $w-desktop) {
+      font-size: $fs-desktop;
+    }
   }
   &__language {
     display: flex;

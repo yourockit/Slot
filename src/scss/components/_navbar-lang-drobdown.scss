@@ -1,4 +1,4 @@
-.navbar-dropdown {
+.navbar-lang-dropdown {
   position: absolute;
   width: 208px;
   top: 67px;
@@ -8,6 +8,7 @@
   background-color: $navbar-dropdown-bg-color;
   box-shadow: 0px 1px 5px 0px #001a4226;
   gap: 10px;
+  z-index: 1;
   &__item {
     display: flex;
     align-items: center;
