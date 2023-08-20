@@ -1,0 +1,41 @@
+.header {
+  @media screen and (min-width: 810px) {
+    min-width: 1076px;
+  }
+}
+// .header-section {
+//     background: url(../images/header/img-header-mobile.jpg), rgba(47, 48, 58, 0.4);
+//     @include bg-img-header ($img-bg-mobile-2x);
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     @media screen and (min-width: $tablet) {
+//         background: url(../images/header/img-header-tablet.jpg), rgba(47, 48, 58, 0.4);
+//         @include bg-img-header ($img-bg-tablet-2x);
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//     }
+//     @media screen and (min-width: $desktop) {
+//         background: url(../images/header/img-header-desktop.jpg), rgba(47, 48, 58, 0.4);
+//         @include bg-img-header ($img-bg-desktop-2x);
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//     }
+//     &__main {
+//         @extend %flex-center;
+//         flex-direction: column;
+//         height: 400px;
+//         @media screen and (min-width: $desktop) {
+//             height: 600px;
+//         }
+//     }
+//     &__title {
+//         text-align: center;
+//         font-weight: 900;
+//         font-size: 26px;
+//         line-height: 1.6;
+//         text-transform: uppercase;
+//         color: $col-text-basic-wite;
+//         margin-bottom: 30px;
+//     }
+// }

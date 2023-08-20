@@ -1,0 +1,29 @@
+.navbar-menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  &__item-title-wrap {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background-color 250ms;
+    &:hover {
+      background-color: $btn-hover-bg-color;
+    }
+    &:active {
+      background-color: $btn-active-bg-color;
+    }
+  }
+  &__item {
+    cursor: pointer;
+  }
+  &__item-title {
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  &__icon-down {
+    height: 10px;
+    width: 10px;
+  }
+}

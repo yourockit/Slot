@@ -1,0 +1,36 @@
+.footer-certificats {
+  background-color: $footer-menu-bg-color;
+  padding: 20px;
+  &__title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  &__api {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__country {
+    display: flex;
+    margin-right: 20px;
+  }
+  &__country-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  &__api-svg {
+    height: 20px;
+    width: 28px;
+  }
+  &__certificats {
+    display: flex;
+  }
+  &__cert-logo {
+    margin-right: 20px;
+  }
+  &__cert-svg {
+    height: 40px;
+    width: 80px;
+  }
+}
