@@ -13,11 +13,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: npm install # Замените на вашу команду установки зависимостей
+
+      - name: Build project
+        run: gulp # Замените на вашу команду сборки проекта в папку dist
+
       - name: Deploy to gh-pages
         run: |
+          git config user.email "action@github.com"
+          git config user.name "GitHub Action"
           git checkout gh-pages
           git rm -rf .
-          git checkout main -- .
+          git checkout main -- dist
+          mv dist/* .
           git add .
           git commit -m "Auto deploy to gh-pages"
           git push origin gh-pages
