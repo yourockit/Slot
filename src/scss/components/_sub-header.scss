@@ -10,14 +10,17 @@
     color: $fc-basic;
     padding: 20px 0 20px 0;
   }
-  &__lang {
+  &__language {
     display: flex;
     align-items: center;
     margin-left: 20px;
   }
 }
 
-.lang-section {
+.lang-selector {
+  &__lang-wrap {
+    position: relative;
+  }
   &__lang-button {
     display: flex;
     align-items: center;
@@ -29,8 +32,15 @@
     cursor: pointer;
     margin-top: 11px;
     margin-bottom: 11px;
+    transition: background-color 250ms;
+    &:hover {
+      background-color: $btn-hover-bg-color;
+    }
+    &:active {
+      background-color: $btn-active-bg-color;
+    }
   }
-  &__flag {
+  &__icon-flag {
     height: 26px;
     width: 26px;
     border-radius: 50%;
@@ -48,9 +58,17 @@
     height: 24px;
     width: 24px;
     border: none;
+    border-radius: 5px;
     background-color: transparent;
     margin-left: 20px;
     cursor: pointer;
+    transition: background-color 250ms;
+    &:hover {
+      background-color: $btn-hover-bg-color;
+    }
+    &:active {
+      background-color: $btn-active-bg-color;
+    }
   }
   &__close {
     height: 24px;

@@ -1,7 +1,7 @@
 <div class="navbar container">
   <div class="navbar__logo">
-    <svg class="navbar__logo-emblem" aria-label="logo">
-      <use class="navbar__icon-emblem" href="./svg/sprite.svg#icon-logo"></use>
+    <svg class="navbar__icon-logo" aria-label="logo">
+      <use class="navbar__icon" href="./svg/sprite.svg#icon-logo"></use>
     </svg>
     <svg class="navbar__logo-slot" aria-label="logo">
       <use
@@ -10,14 +10,20 @@
       ></use>
     </svg>
   </div>
-  <div class="navbar__group">
+  <div class="navbar__menu-desktop">@@include('navbar-menu.html')</div>
+  <div class="navbar__search">
+    <svg class="navbar__icon-search-wrap" aria-label="key-arow-down">
+      <use
+        class="navbar__icon search"
+        href="./svg/sprite.svg#icon-search"
+      ></use>
+    </svg>
+  </div>
+  <div class="navbar__group-btn">
     <button class="navbar__contact-button">Contact us</button>
     <button class="navbar__menu-button">
-      <svg class="navbar__menu" aria-label="menu">
-        <use
-          class="lang-section__icon-menu"
-          href="./svg/sprite.svg#icon-menu"
-        ></use>
+      <svg class="navbar__icon-menu" aria-label="menu">
+        <use class="lang-section__icon" href="./svg/sprite.svg#icon-menu"></use>
       </svg>
     </button>
   </div>

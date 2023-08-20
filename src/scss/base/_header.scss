@@ -1,3 +1,8 @@
+.header {
+  @media screen and (min-width: 810px) {
+    min-width: 1076px;
+  }
+}
 // .header-section {
 //     background: url(../images/header/img-header-mobile.jpg), rgba(47, 48, 58, 0.4);
 //     @include bg-img-header ($img-bg-mobile-2x);

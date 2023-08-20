@@ -26,26 +26,60 @@
         to see language localized content.
       </p>
     </div>
-    <div class="sub-header__lang lang-section">
-      <button class="lang-section__lang-button">
-        <svg class="lang-section__flag" aria-label="flag">
+    <div class="sub-header__language lang-selector">
+      <div class="lang-selector__lang-wrap">
+        <button class="lang-selector__lang-button">
+          <svg class="lang-selector__icon-flag" aria-label="flag-gd">
+            <use
+              class="lang-selector__icon-flag-gd"
+              href="./svg/sprite.svg#icon-flag-gd"
+            ></use>
+          </svg>
+          <span class="lang-selector__language">German</span>
+          <svg class="lang-selector__down" aria-label="key-arow-down">
+            <use
+              class="lang-selector__icon-down"
+              href="./svg/sprite.svg#icon-down"
+            ></use>
+          </svg>
+        </button>
+        <div class="lang-selector__navbar-dropdown navbar-dropdown disabled">
+          <ul class="navbar-dropdown__list">
+  <li class="navbar-dropdown__item">
+    <svg class="navbar-dropdown__icon-flag" aria-label="flag-gd">
+      <use
+        class="navbar-dropdown__icon-flag-gd"
+        href="./svg/sprite.svg#icon-flag-gd"
+      ></use>
+    </svg>
+    <span class="navbar-dropdown__language">German</span>
+  </li>
+  <li class="navbar-dropdown__item">
+    <svg class="navbar-dropdown__icon-flag" aria-label="flag-gd">
+      <use
+        class="navbar-dropdown__icon-flag-eng"
+        href="./svg/sprite.svg#icon-flag-eng"
+      ></use>
+    </svg>
+    <span class="navbar-dropdown__language">English</span>
+  </li>
+</ul>
+<div class="navbar-dropdown__other-language">
+  <svg class="navbar-dropdown__icon-flag" aria-label="flag-gd">
+    <use
+      class="navbar-dropdown__icon-other-lang"
+      href="./svg/sprite.svg#icon-other-lang"
+    ></use>
+  </svg>
+  <span class="navbar-dropdown__language">Other Language</span>
+</div>
+
+        </div>
+      </div>
+      <button class="lang-selector__close-button">
+        <svg class="lang-selector__close" aria-label="close">
           <use
-            class="lang-section__icon-flag"
-            href="./svg/sprite.svg#icon-flag"
-          ></use>
-        </svg>
-        <span class="lang-section__language">German</span>
-        <svg class="lang-section__down" aria-label="key-arow-down">
-          <use
-            class="lang-section__icon-down"
-            href="./svg/sprite.svg#icon-down"
-          ></use>
-        </svg>
-      </button>
-      <button class="lang-section__close-button">
-        <svg class="lang-section__close" aria-label="close">
-          <use
-            class="lang-section__icon-close"
+            class="lang-selector__icon-close"
             href="./svg/sprite.svg#icon-close"
           ></use>
         </svg>
@@ -56,8 +90,8 @@
 
       <div class="navbar container">
   <div class="navbar__logo">
-    <svg class="navbar__logo-emblem" aria-label="logo">
-      <use class="navbar__icon-emblem" href="./svg/sprite.svg#icon-logo"></use>
+    <svg class="navbar__icon-logo" aria-label="logo">
+      <use class="navbar__icon" href="./svg/sprite.svg#icon-logo"></use>
     </svg>
     <svg class="navbar__logo-slot" aria-label="logo">
       <use
@@ -66,14 +100,185 @@
       ></use>
     </svg>
   </div>
-  <div class="navbar__group">
+  <div class="navbar__menu-desktop"><ul class="navbar__menu-left navbar-menu">
+  <li class="navbar-menu__item">
+    <div class="navbar-menu__item-title-wrap">
+      <h4 class="navbar-menu__item-title">Integrations</h4>
+      <svg class="navbar-menu__icon-down" aria-label="key-arow-down">
+        <use class="navbar-menu__icon" href="./svg/sprite.svg#icon-down"></use>
+      </svg>
+    </div>
+    <ul class="navbar-menu__item-list disabled">
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Game providers</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Slots</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Live dealers</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Bingo</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Virtual sports</a>
+      </li>
+    </ul>
+  </li>
+  <li class="navbar-menu__item">
+    <div class="navbar-menu__item-title-wrap">
+      <h4 class="navbar-menu__item-title">Solutions</h4>
+      <svg class="navbar-menu__icon-down" aria-label="key-arow-down">
+        <use class="navbar-menu__icon" href="./svg/sprite.svg#icon-down"></use>
+      </svg>
+    </div>
+    <ul class="navbar-menu__list disabled">
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">All solutions</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Turnkey online casino</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">White label casino</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Crypto casino</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Frontend Builder</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Solutions compared</a>
+      </li>
+    </ul>
+  </li>
+  <li class="navbar-menu__item">
+    <div class="navbar-menu__item-title-wrap">
+      <h4 class="navbar-menu__item-title">Products/Modules</h4>
+      <svg class="navbar-menu__icon-down" aria-label="key-arow-down">
+        <use class="navbar-menu__icon" href="./svg/sprite.svg#icon-down"></use>
+      </svg>
+    </div>
+    <ul class="navbar-menu__list disabled">
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">All Products</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Game integration</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Payment systems</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Online sportsbook</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Telegram casino</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Affiliate management</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Bonus system</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Licensing</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Advisory services</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Hosting</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Platform updates</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Demo casino updates</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+<ul class="navbar__menu-right navbar-menu">
+  <li class="navbar-menu__item">
+    <div class="navbar-menu__item-title-wrap">
+      <h4 class="navbar-menu__item-title">Academy</h4>
+      <svg class="navbar-menu__icon-down" aria-label="key-arow-down">
+        <use class="navbar-menu__icon" href="./svg/sprite.svg#icon-down"></use>
+      </svg>
+    </div>
+    <ul class="navbar-menu__list disabled">
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Go to Academy</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Analytical articles</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Industry news</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Ebooks</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Webinars</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Interview</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Video Academy</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Infographics</a>
+      </li>
+    </ul>
+  </li>
+  <li class="navbar-menu__item">
+    <div class="navbar-menu__item-title-wrap">
+      <h4 class="navbar-menu__item-title">Company</h4>
+      <svg class="navbar-menu__icon-down" aria-label="key-arow-down">
+        <use class="navbar-menu__icon" href="./svg/sprite.svg#icon-down"></use>
+      </svg>
+    </div>
+    <ul class="navbar-menu__list disabled">
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">About us</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Careers</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">News</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Reviews</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">Media partners</a>
+      </li>
+      <li class="navbar-menu__item-content">
+        <a class="navbar-menu__item-link" href="">FAQ</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+</div>
+  <div class="navbar__search">
+    <svg class="navbar__icon-search-wrap" aria-label="key-arow-down">
+      <use
+        class="navbar__icon search"
+        href="./svg/sprite.svg#icon-search"
+      ></use>
+    </svg>
+  </div>
+  <div class="navbar__group-btn">
     <button class="navbar__contact-button">Contact us</button>
     <button class="navbar__menu-button">
-      <svg class="navbar__menu" aria-label="menu">
-        <use
-          class="lang-section__icon-menu"
-          href="./svg/sprite.svg#icon-menu"
-        ></use>
+      <svg class="navbar__icon-menu" aria-label="menu">
+        <use class="lang-section__icon" href="./svg/sprite.svg#icon-menu"></use>
       </svg>
     </button>
   </div>
@@ -115,7 +320,7 @@
           <use class="point__icon-down" href="./svg/sprite.svg#icon-down"></use>
         </svg>
       </div>
-      <ul class="point__list item-disabled">
+      <ul class="point__list disabled">
         <li class="point__item">
           <a class="point__item-content" href="">All solutions</a>
         </li>
@@ -143,7 +348,7 @@
           <use class="point__icon-down" href="./svg/sprite.svg#icon-down"></use>
         </svg>
       </div>
-      <ul class="point__list item-disabled">
+      <ul class="point__list disabled">
         <li class="point__item">
           <a class="point__item-content" href="">All Products</a>
         </li>
@@ -189,7 +394,7 @@
           <use class="point__icon-down" href="./svg/sprite.svg#icon-down"></use>
         </svg>
       </div>
-      <ul class="point__list item-disabled">
+      <ul class="point__list disabled">
         <li class="point__item">
           <a class="point__item-content" href="">Go to Academy</a>
         </li>
@@ -223,7 +428,7 @@
           <use class="point__icon-down" href="./svg/sprite.svg#icon-down"></use>
         </svg>
       </div>
-      <ul class="point__list item-disabled">
+      <ul class="point__list disabled">
         <li class="point__item">
           <a class="point__item-content" href="">About us</a>
         </li>
@@ -414,7 +619,7 @@
     <svg class="footer-policy__flag" aria-label="flag">
       <use
         class="footer-policy__icon-flag"
-        href="./svg/sprite.svg#icon-flag"
+        href="./svg/sprite.svg#icon-flag-gd"
       ></use>
     </svg>
     <span class="lang-section__language">German</span>
@@ -427,5 +632,6 @@
 </div>
 
     </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>

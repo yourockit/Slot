@@ -23,6 +23,14 @@ gulp.task("copy-html", function () {
   return gulp.src("src/index.html").pipe(copy("dist", { prefix: 1 }));
 });
 
+// Задача для копирования файлов js из src в dist
+gulp.task("js", function () {
+  return gulp
+    .src("src/js/*.js")
+    .pipe(gulp.dest("dist/js"))
+    .pipe(browserSync.stream());
+});
+
 // Задача для копирования файлов SVG из src в dist/svg
 gulp.task("copy-svg", function () {
   return gulp.src("src/**/*.svg").pipe(copy("dist/", { prefix: 1 }));
@@ -46,6 +54,7 @@ gulp.task("watch", function () {
   });
 
   gulp.watch("src/scss/**/*.scss", gulp.series("sass"));
+  gulp.watch("src/js/*.js", gulp.series("js"));
   gulp.watch("src/components/**/*.html", gulp.series("build"));
   gulp.watch("src/**/*.svg", gulp.series("copy-svg"));
   gulp.watch("dist/index.html").on("change", browserSync.reload);
