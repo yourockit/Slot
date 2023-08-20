@@ -1,4 +1,3 @@
-
 name: Deploy to gh-pages
 
 on:
@@ -14,14 +13,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Deploy to gh-pages
+      - name: Build project and deploy to gh-pages
         run: |
-          git config user.email "action@github.com"
-          git config user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          npm install
+          npm run build # Замените на вашу команду сборки проекта
           git checkout gh-pages
-          git rm -rf .
-          git checkout main -- dist
+          rm -rf *
           mv dist/* .
           git add .
           git commit -m "Auto deploy to gh-pages"
-          git push origin gh-pages
+          git push --force origin gh-pages
