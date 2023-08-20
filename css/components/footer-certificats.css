@@ -1,0 +1,24 @@
+.footer-certificats__title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.footer-certificats__api {
+  display: flex;
+}
+.footer-certificats__country {
+  display: flex;
+}
+.footer-certificats__country-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.footer-certificats__api-svg {
+  height: 20px;
+  width: 28px;
+}
+.footer-certificats__cert-svg {
+  height: 40px;
+  width: 80px;
+}
