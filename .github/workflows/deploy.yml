@@ -25,8 +25,8 @@ jobs:
       # This steps build our app. In this case we just move all files from the src folder to the dist folder
       - name: Install and Build 🔧
         run: |
-          mkdir -p dist
-          cp -r src/* dist
+          git checkout main -- dist
+          mv dist/* .
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
