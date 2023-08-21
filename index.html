@@ -284,9 +284,10 @@
 </div>
 </div>
 </header>
-    <footer class="footer"><div class="footer__group-menu-contacts container">
-  <div class="footer__section-menu footer-menu">
-    <ul class="footer-menu__list footer-menu-mobile">
+    <footer class="footer"><div class="footer__wrap container">
+  <div class="footer__group-menu-contacts">
+    <div class="footer__section-menu footer-menu">
+      <ul class="footer-menu__list footer-menu-mobile">
   <li class="footer-menu__item">
     <div class="footer-menu__item-title-wrap" data-item>
       <h4 class="footer-menu__item-title">Integrations</h4>
@@ -465,7 +466,7 @@
   </li>
 </ul>
 
-    <ul class="footer-menu__list footer-menu-desktop disabled">
+      <ul class="footer-menu__list footer-menu-desktop disabled">
   <li class="footer-menu__item">
     <div class="footer-menu__item-title-wrap">
       <h4 class="footer-menu__item-title">Integrations</h4>
@@ -614,9 +615,9 @@
   </li>
 </ul>
 
-  </div>
-  <div class="footer__section-contacts footer-contacts">
-    <div class="footer-contacts__title">Contact us</div>
+    </div>
+    <div class="footer__section-contacts footer-contacts">
+      <div class="footer-contacts__title">Contact us</div>
 <div class="footer-contacts__wrap">
   <p class="footer-contacts__description">
     Use only the official channels of communication listed below
@@ -714,69 +715,67 @@
   </ul>
 </div>
 
+    </div>
   </div>
-</div>
-<div class="footer__section-certificats footer-certificats container">
-  <div class="container">
-  <div class="footer-certificats">
-    <div class="footer-certificats__api-wrap">
-      <p class="footer-certificats__title">API certified for:</p>
-      <div class="footer-certificats__api">
-        <div class="footer-certificats__country">
-          <svg class="footer-certificats__api-svg" aria-label="flag-lt">
-            <use
-              class="footer-certificats__api-icon"
-              href="./svg/sprite.svg#icon-flag-lt"
-            ></use>
-          </svg>
-          <p class="footer-certificats__country-name">Lithuania</p>
-        </div>
-        <div class="footer-certificats__country">
-          <svg class="footer-certificats__api-svg" aria-label="flag-ge">
-            <use
-              class="footer-certificats__api-icon"
-              href="./svg/sprite.svg#icon-flag-ge"
-            ></use>
-          </svg>
-          <p class="footer-certificats__country-name">Georgia</p>
-        </div>
+  <div class="footer__section-certificats footer-certificats">
+    <div class="footer-certificats__wrap">
+  <div class="footer-certificats__api-wrap">
+    <p class="footer-certificats__title">API certified for:</p>
+    <div class="footer-certificats__api">
+      <div class="footer-certificats__country">
+        <svg class="footer-certificats__api-svg" aria-label="flag-lt">
+          <use
+            class="footer-certificats__api-icon"
+            href="./svg/sprite.svg#icon-flag-lt"
+          ></use>
+        </svg>
+        <p class="footer-certificats__country-name">Lithuania</p>
+      </div>
+      <div class="footer-certificats__country">
+        <svg class="footer-certificats__api-svg" aria-label="flag-ge">
+          <use
+            class="footer-certificats__api-icon"
+            href="./svg/sprite.svg#icon-flag-ge"
+          ></use>
+        </svg>
+        <p class="footer-certificats__country-name">Georgia</p>
       </div>
     </div>
-    <div class="footer-certificats__certificats-wrap">
-      <p class="footer-certificats__title">Our certificates:</p>
-      <div class="footer-certificats__certificats">
-        <div class="footer-certificats__cert-logo">
-          <svg class="footer-certificats__cert-svg" aria-label="siq">
-            <use
-              class="footer-certificats__cert-icon"
-              href="./svg/sprite.svg#icon-siq"
-            ></use>
-          </svg>
-        </div>
-        <div class="footer-certificats__cert-logo">
-          <svg class="footer-certificats__cert-svg" aria-label="mga">
-            <use
-              class="footer-certificats__cert-icon"
-              href="./svg/sprite.svg#icon-mga"
-            ></use>
-          </svg>
-        </div>
-        <div class="footer-certificats__cert-logo">
-          <svg class="footer-certificats__cert-svg" aria-label="onjn">
-            <use
-              class="footer-certificats__cert-icon"
-              href="./svg/sprite.svg#icon-onjn"
-            ></use>
-          </svg>
-        </div>
+  </div>
+  <div class="footer-certificats__certificats-wrap">
+    <p class="footer-certificats__title">Our certificates:</p>
+    <div class="footer-certificats__certificats">
+      <div class="footer-certificats__cert-logo">
+        <svg class="footer-certificats__cert-svg" aria-label="siq">
+          <use
+            class="footer-certificats__cert-icon"
+            href="./svg/sprite.svg#icon-siq"
+          ></use>
+        </svg>
+      </div>
+      <div class="footer-certificats__cert-logo">
+        <svg class="footer-certificats__cert-svg" aria-label="mga">
+          <use
+            class="footer-certificats__cert-icon"
+            href="./svg/sprite.svg#icon-mga"
+          ></use>
+        </svg>
+      </div>
+      <div class="footer-certificats__cert-logo">
+        <svg class="footer-certificats__cert-svg" aria-label="onjn">
+          <use
+            class="footer-certificats__cert-icon"
+            href="./svg/sprite.svg#icon-onjn"
+          ></use>
+        </svg>
       </div>
     </div>
   </div>
 </div>
 
-</div>
-<div class="footer__section-policy footer-policy container">
-  <div class="footer-policy container">
+  </div>
+  <div class="footer__section-policy footer-policy">
+    <div class="footer-policy__wrap">
   <div class="footer-policy__lang">
     <svg class="footer-policy__flag" aria-label="flag">
       <use
@@ -787,10 +786,31 @@
     <span class="lang-section__language">German</span>
   </div>
   <div class="footer-policy__content-list">
-    <a class="footer-policy__content-item" href="">Sitemap</a>
-    <a href="">Privacy policy</a>
+    <a class="footer-policy__content-link" href="">Sitemap</a>
+    <a class="footer-policy__content-link" href="">Privacy policy</a>
+    <p class="footer-policy__rights">
+      © 2015-2023 Slotegrator, All Rights Reserved.
+    </p>
   </div>
-  <p class="footer-policy__rights">© 2015-2023 Slotegrator, All Rights Reserved.</d>
+</div>
+
+  </div>
+</div>
+<div class="footer__popup footer-popup disabled">
+  <div class="footer-popup__overlay">
+  <div class="footer-popup__modal">
+    <div class="footer-popup__title-wrap">
+      <h4 class="footer-popup__title">Other languages</h4>
+      <button class="footer-popup__close-button">
+        <svg class="footer-popup__close" aria-label="close">
+          <use
+            class="footer-popup__icon-close"
+            href="./svg/sprite.svg#icon-close"
+          ></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 </div>
 
 </div>
