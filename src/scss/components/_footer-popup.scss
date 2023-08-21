@@ -1,0 +1,49 @@
+.footer-popup {
+  &__overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $footer-popup-backdrop-bg-color;
+  }
+  &__modal {
+    width: 656px;
+    height: 422px;
+    border-radius: 20px;
+    box-shadow: $footer-popup-modal-box-shadow;
+    background-color: $footer-popup-modal-bg-color;
+    padding: 20px;
+  }
+  &__title-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  &__close-button {
+    height: 24px;
+    width: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: background-color 250ms;
+    &:hover {
+      background-color: $btn-hover-bg-color;
+    }
+    &:active {
+      background-color: $btn-active-bg-color;
+    }
+  }
+  &__close {
+    height: 24px;
+    width: 24px;
+  }
+}

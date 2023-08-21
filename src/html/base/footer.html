@@ -1,15 +1,20 @@
-<div class="footer__group-menu-contacts container">
-  <div class="footer__section-menu footer-menu">
-    @@include('../components/footer-menu-mobile.html')
-    @@include('../components/footer-menu-desktop.html')
+<div class="footer__wrap container">
+  <div class="footer__group-menu-contacts">
+    <div class="footer__section-menu footer-menu">
+      @@include('../components/footer-menu-mobile.html')
+      @@include('../components/footer-menu-desktop.html')
+    </div>
+    <div class="footer__section-contacts footer-contacts">
+      @@include('../components/footer-contacts.html')
+    </div>
   </div>
-  <div class="footer__section-contacts footer-contacts">
-    @@include('../components/footer-contacts.html')
+  <div class="footer__section-certificats footer-certificats">
+    @@include('../components/footer-certificats.html')
+  </div>
+  <div class="footer__section-policy footer-policy">
+    @@include('../components/footer-policy.html')
   </div>
 </div>
-<div class="footer__section-certificats footer-certificats container">
-  @@include('../components/footer-certificats.html')
-</div>
-<div class="footer__section-policy footer-policy container">
-  @@include('../components/footer-policy.html')
+<div class="footer__popup footer-popup disabled">
+  @@include('../components/footer-popup.html')
 </div>

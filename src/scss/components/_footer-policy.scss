@@ -1,9 +1,15 @@
 .footer-policy {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-top: 1px solid $fc-basic;
-  margin: 20px;
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid $fc-basic;
+    margin: 20px;
+    @media screen and (min-width: $w-mobile) {
+      justify-content: space-between;
+    }
+  }
   &__lang {
     display: flex;
     align-items: center;
@@ -11,12 +17,12 @@
     border-radius: 10px;
     padding: 10px;
     background-color: $footer-menu-bg-color;
-    box-shadow: $sub-header-btn-box-shadow;
     margin: 40px;
   }
   &__flag {
     height: 26px;
     width: 26px;
+    margin-right: 10px;
     border-radius: 50%;
   }
   &__language {
@@ -25,9 +31,14 @@
     padding: 0 10px 0 10px;
   }
   &__content-list {
-    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
-  &__content-item {
+  &__content-link {
+    color: $fc-basic;
     margin: 10px;
   }
 }

@@ -2,7 +2,7 @@
   max-width: 1362px;
   margin: auto;
   @include container;
-  @media screen and (min-width: 810px) {
+  @media screen and (min-width: $w-mobile) {
     min-width: 1076px;
   }
 }
