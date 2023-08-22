@@ -1,7 +1,7 @@
 .header {
   box-shadow: 0px 6px 10px 0px #00095f0d;
   margin-bottom: 100px;
-  @media screen and (min-width: 810px) {
+  @media screen and (min-width: $w-tablet) {
     min-width: 1076px;
   }
 }

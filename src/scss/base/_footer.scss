@@ -1,13 +1,13 @@
 .footer {
   position: relative;
-  background-color: $footer-bg-color;
   &__wrap {
     display: flex;
     flex-direction: column;
+    background-color: $footer-bg-color;
     padding-top: 40px;
     gap: 40px;
   }
-  @media screen and (min-width: $w-mobile) {
+  @media screen and (min-width: $w-tablet) {
     padding-top: 60px;
   }
   @media screen and (min-width: $w-desktop) {
@@ -18,13 +18,13 @@
     flex-direction: column-reverse;
     width: 100%;
     gap: 30px;
-    @media screen and (min-width: $w-mobile) {
+    @media screen and (min-width: $w-tablet) {
       flex-direction: row;
       justify-content: space-between;
     }
   }
   &__section-menu {
-    @media screen and (min-width: $w-mobile) {
+    @media screen and (min-width: $w-tablet) {
       width: calc(50% - 10px);
     }
     @media screen and (min-width: $w-desktop) {
@@ -32,7 +32,7 @@
     }
   }
   &__section-contacts {
-    @media screen and (min-width: $w-mobile) {
+    @media screen and (min-width: $w-tablet) {
       width: calc(50% - 10px);
     }
     @media screen and (min-width: $w-desktop) {

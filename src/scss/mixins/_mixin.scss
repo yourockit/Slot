@@ -1,0 +1,24 @@
+//PADDING-CONTAINER
+
+@mixin container {
+  padding-left: 10px;
+  padding-right: 10px;
+  @media screen and (min-width: $w-tablet) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media screen and (min-width: $w-desktop) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@mixin fontSize {
+  font-size: 12px;
+  @media screen and (min-width: $w-tablet) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $w-desktop) {
+    font-size: 16px;
+  }
+}

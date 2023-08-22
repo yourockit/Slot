@@ -1,12 +1,9 @@
 .footer-contacts {
   &__title {
-    font-size: 20px;
+    @include fontSize;
     font-weight: bold;
     margin-bottom: 20px;
     padding: 10px 10px 10px 0;
-    @media screen and (min-width: $w-desktop) {
-      font-size: 26px;
-    }
   }
   &__wrap {
     background-color: $footer-menu-bg-color;
@@ -14,7 +11,7 @@
     padding: 20px;
   }
   &__description {
-    font-size: 14px;
+    @include fontSize;
     font-weight: 500;
     margin-bottom: 20px;
   }

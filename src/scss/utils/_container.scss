@@ -1,8 +1,8 @@
 .container {
-  max-width: 1362px;
+  max-width: $max-width;
   margin: auto;
   @include container;
-  @media screen and (min-width: $w-mobile) {
+  @media screen and (min-width: $w-tablet) {
     min-width: 1076px;
   }
 }

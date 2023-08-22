@@ -1,6 +1,6 @@
 @import "./components/modern-normalize";
 @import "./variable/var";
-// @import "./utils/sample";
+@import "./mixins/mixin";
 @import "./base/body";
 @import "./base/header";
 @import "./base/footer";
@@ -15,5 +15,4 @@
 @import "./components/footer-popup";
 @import "./utils/disabled";
 @import "./utils/footer-menu-utils";
-@import "./utils/mixin";
 @import "./utils/container";

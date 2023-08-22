@@ -14,7 +14,7 @@
     gap: 25px;
   }
   &__title {
-    font-size: 14px;
+    @include fontSize;
     font-weight: 500;
     margin-bottom: 20px;
   }
@@ -26,7 +26,7 @@
     margin-right: 20px;
   }
   &__country-name {
-    font-size: 14px;
+    @include fontSize;
     font-weight: 500;
     margin-left: 10px;
   }

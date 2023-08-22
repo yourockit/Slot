@@ -25,11 +25,8 @@
     }
   }
   &__item-title {
-    font-size: 20px;
+    @include fontSize;
     font-weight: bold;
-    @media screen and (min-width: $w-desktop) {
-      font-size: 26px;
-    }
   }
   &__down {
     height: 10px;
@@ -44,14 +41,11 @@
     margin-bottom: 10px;
   }
   &__item-link {
-    font-size: 14px;
+    @include fontSize;
     color: $fc-basic;
     transition: text-shadow 100ms;
     &:hover {
       text-shadow: 0 0 0.65px #333, 0 0 0.65px $fc-basic;
-    }
-    @media screen and (min-width: $w-desktop) {
-      font-size: 16px;
     }
   }
 }

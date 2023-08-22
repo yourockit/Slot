@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-around;
   gap: 5px;
+  z-index: 1;
   &__item-title-wrap {
     display: flex;
     align-items: center;
@@ -20,7 +21,7 @@
     cursor: pointer;
   }
   &__item-title {
-    font-size: 16px;
+    @include fontSize;
     font-weight: 500;
     margin-right: 10px;
   }
@@ -42,7 +43,7 @@
     display: flex;
   }
   &__submenu-item {
-    font-size: 16px;
+    @include fontSize;
     padding: 10px 25px 10px 25px;
     transition: background-color 250ms;
     &:hover {
@@ -53,7 +54,7 @@
     }
   }
   &__item-link {
-    font-size: 16px;
+    @include fontSize;
     font-weight: 500;
     color: $fc-basic;
   }

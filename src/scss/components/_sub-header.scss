@@ -6,12 +6,9 @@
     align-items: center;
   }
   &__text {
-    font-size: $fs-mobile;
+    @include fontSize;
     color: $fc-basic;
     padding: 20px 0 20px 0;
-    @media screen and (min-width: $w-desktop) {
-      font-size: $fs-desktop;
-    }
   }
   &__language {
     display: flex;
@@ -49,7 +46,7 @@
     border-radius: 50%;
   }
   &__language {
-    font-size: 16px;
+    @include fontSize;
     line-height: 0;
     padding: 0 10px 0 10px;
   }

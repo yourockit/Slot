@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     border-top: 1px solid $fc-basic;
     margin: 20px;
-    @media screen and (min-width: $w-mobile) {
+    @media screen and (min-width: $w-tablet) {
       justify-content: space-between;
     }
   }
@@ -26,7 +26,7 @@
     border-radius: 50%;
   }
   &__language {
-    font-size: 16px;
+    @include fontSize;
     line-height: 0;
     padding: 0 10px 0 10px;
   }
